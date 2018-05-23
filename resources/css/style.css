@@ -10,7 +10,6 @@ html{
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
   height: 30rem;
   width: 100%;
-
 }
 
 .headercontainer{
@@ -20,7 +19,6 @@ html{
   background-color: cadetblue;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1rem;
 }
 
 .headercontainer img{
@@ -64,22 +62,28 @@ html{
 }
 
 .image{
-  width: 3.5rem;
-  padding-left: 6rem;
-  padding-right: 6rem;
-  display: block;
-  padding-top: 3rem;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+  text-align: center;
 }
 
+.imagecontainer img{
+  width: 5rem;
+  margin-bottom: 1rem;
+}
 .imagecontainer{
   display: flex;
   justify-content: center;
   height: 8rem;
+  padding-bottom: 3rem;
+  font-weight: bold;
 }
-.image span{
-  text-align: center;
-}
+
 .descriptioncontainer{
   display: flex;
   justify-content: center;
@@ -88,4 +92,43 @@ html{
 .description{
   padding-left: 6rem;
   padding-right: 6rem;
+}
+
+.tabcontainer{
+  display: flex;
+  justify-content: center;
+
+}
+
+.tabitself{
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: cadetblue;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  width: 10rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.tab {
+  margin: 10rem;
+}
+
+.thefooter{
+  padding-left: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.footercontainer{
+  background-color: azure;
+  margin: auto;
+}
+.thefooter img{
+  height: 1.5rem;
+  padding-right: 1rem;
 }
